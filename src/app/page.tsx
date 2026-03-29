@@ -149,30 +149,30 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-primary-500/20 aspect-square md:aspect-[4/3] lg:aspect-square">
-              {/* Fallback pattern if image is not right, but we have /assets/hero_water_depot.png */}
+            <div className="relative rounded-[2.5rem] overflow-hidden shadow-[0_0_80px_rgba(0,198,255,0.15)] aspect-[4/5] md:aspect-square border border-white/10 group">
               <div className="absolute inset-0 bg-dark-800"></div>
               <Image 
-                src="/assets/hero_water_depot.png" 
-                alt="Air Minum Tirta Segar"
+                src="/assets/premium_abstract_water.png" 
+                alt="Kemurnian Air Tirta Segar"
                 fill
-                className="object-cover transition-transform duration-700 hover:scale-105"
+                className="object-cover transition-transform duration-[20s] group-hover:scale-110"
                 unoptimized
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-dark-950/50 to-transparent"></div>
             </div>
 
             <motion.div 
               animate={{ y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-              className="absolute -bottom-6 -left-6 md:bottom-10 md:left-[-40px] bg-dark-900/90 backdrop-blur-md border border-white/10 p-5 rounded-2xl flex items-center gap-4 shadow-xl"
+              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+              className="absolute -bottom-6 -left-6 md:bottom-12 md:-left-12 bg-dark-900/60 backdrop-blur-xl border border-white/20 p-5 rounded-3xl flex items-center gap-5 shadow-2xl"
             >
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
-                <CheckCircle2 className="text-white" size={24} />
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center rotate-3 border border-white/20 shadow-inner">
+                <CheckCircle2 className="text-white" size={28} />
               </div>
-              <div>
-                <p className="font-heading font-bold text-lg leading-none">Koperasi & UKM</p>
-                <p className="text-secondary-400 text-sm mt-1">Terkurasi Karawang</p>
+              <div className="pr-4">
+                <p className="font-heading font-bold text-lg leading-tight text-white mb-0.5">Standar Premium</p>
+                <p className="text-secondary-400 text-sm font-medium">Binaan Koperasi & UKM</p>
               </div>
             </motion.div>
           </motion.div>
